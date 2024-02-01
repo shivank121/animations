@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-repeat:  no-repeat;
+            background-size: 100% 100% ;
+            background-attachment: fixed;
+            position: relative;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        .animation-image-box{
+            position: absolute;
+            bottom: 12%;
+            width: 100%; /* Set width to 100% to span the entire width of the body */
+        }
+    </style>
+</head>
+<body background="./assets/bg.jpg" >
+    <div class="animation-image-box" >
+        <marquee direction="right" scrollamount="15"  >
+            <img src="./assets/a.gif" width="30%"> &emsp; &emsp; &emsp; &emsp; &emsp;
+            <img src="./assets/b.gif" width="15%">&emsp; &emsp;
+            <img src="./assets/c.gif" width="5%">
+        </marquee>
+    </div>
+</body>
+</html>
